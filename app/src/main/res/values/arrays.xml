@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="municipalities_array">
+
+        <item>Beijing is the capital of the People’s Republic of China and one of the country’s four municipalities directly under the central government. It is an important political, cultural, international communication, and scientific and technological innovation centre. Beijing has a long urban history and has served as a national capital for many centuries. The municipality covers about 16,410 square kilometres and contains 16 districts. It is home to many well-known cultural landmarks, including the Forbidden City and sections of the Great Wall. Today, Beijing combines its historic heritage with modern transport, education, research, business, and technology.</item>
+
+        <item>Shanghai is a municipality directly under China’s central government and a major international metropolis. It is located at the mouth of the Yangtze River in eastern China and forms an important part of the Yangtze River Delta. Shanghai has 16 districts and is one of China’s leading centres for finance, trade, shipping, technology, and commerce. The city has developed from a historic port into a highly modern urban centre with global connections. Its skyline, including the Lujiazui financial district, reflects its rapid development, while older neighbourhoods and cultural sites preserve parts of its historical character and local traditions.</item>
+
+        <item>Chongqing is a municipality directly under China’s central government and is located in southwest China on the upper reaches of the Yangtze River. It covers about 82,400 square kilometres, making it one of China’s largest municipalities by area. The region is known for its mountainous landscape, dense river network, and the meeting of the Yangtze and Jialing rivers. Chongqing is an important industrial, transport, and economic centre in central and western China. Its urban areas are famous for steep streets, bridges, and dramatic river views, while the wider municipality includes numerous districts and counties with both urban and rural communities.</item>
+
+        <item>Tianjin is a municipality directly under China’s central government and a major coastal city in northern China. It lies near Beijing, between the Yanshan Mountains and the Bohai Sea, and has long benefited from river and sea transport. The city was officially established in 1404 and later became an important centre for trade, industry, finance, and international exchange. The Haihe River runs through Tianjin and connects the city with the coast. Tianjin Port is a major transportation and shipping hub for northern China. The city is also known for historic architecture, traditional folk arts, local food, and attractions such as the Tianjin Eye.</item>
+
+    </string-array>
+
+</resources>
