@@ -13,6 +13,9 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 
 public class Municipality extends AppCompatActivity {
 
@@ -82,6 +85,7 @@ public class Municipality extends AppCompatActivity {
         int informationIndex;
         int imageResource;
         int colourResource;
+        String websiteUrl;
 
         switch (processedMunicipality) {
 
@@ -89,24 +93,28 @@ public class Municipality extends AppCompatActivity {
                 informationIndex = 0;
                 imageResource = R.drawable.beijing;
                 colourResource = R.color.municipality_beijing;
+                websiteUrl = "https://english.beijing.gov.cn/";
                 break;
 
             case "Shanghai":
                 informationIndex = 1;
                 imageResource = R.drawable.shanghai;
                 colourResource = R.color.municipality_shanghai;
+                websiteUrl = "https://english.shanghai.gov.cn/";
                 break;
 
             case "Chongqing":
                 informationIndex = 2;
                 imageResource = R.drawable.chongqing;
                 colourResource = R.color.municipality_chongqing;
+                websiteUrl = "https://english.cq.gov.cn/";
                 break;
 
             case "Tianjin":
                 informationIndex = 3;
                 imageResource = R.drawable.tianjin;
                 colourResource = R.color.municipality_tianjin;
+                websiteUrl = "https://en.tj.gov.cn/";
                 break;
 
             default:
@@ -169,5 +177,19 @@ public class Municipality extends AppCompatActivity {
             municipalityNameTextView.setTextColor(lightText);
             visitSiteButton.setTextColor(lightText);
         }
+        visitSiteButton.setOnClickListener(view -> {
+            Intent websiteIntent =
+                    new Intent(Intent.ACTION_VIEW, Uri.parse(websiteUrl));
+
+            try {
+                startActivity(websiteIntent);
+            } catch (ActivityNotFoundException exception) {
+                Toast.makeText(
+                        Municipality.this,
+                        getString(R.string.error_no_browser),
+                        Toast.LENGTH_SHORT
+                ).show();
+            }
+        });
     }
 }

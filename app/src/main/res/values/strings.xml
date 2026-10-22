@@ -11,4 +11,5 @@
     <string name="error_empty_municipality">Please enter a municipality.</string>
     <string name="error_invalid_municipality">Please enter Beijing, Shanghai, Tianjin, or Chongqing.</string>
     <string name="error_invalid_municipality_data">Invalid municipality data.</string>
+    <string name="error_no_browser">No application is available to open this website.</string>
 </resources>
