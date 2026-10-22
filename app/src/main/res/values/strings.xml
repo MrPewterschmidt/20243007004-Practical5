@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Chinese Municipalities</string>
+    <string name="main_title">Municipalities in China</string>
+    <string name="municipality_prompt">I want to know about:</string>
+    <string name="municipality_hint">Enter a municipality</string>
+    <string name="municipality_image_description">Map of China showing the municipalities</string>
 </resources>

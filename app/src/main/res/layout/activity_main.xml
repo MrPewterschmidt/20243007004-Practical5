@@ -1,19 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_default_background"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
+        android:text="@string/main_title"
+        android:textColor="@color/color_text_dark"
+        android:textSize="26sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/municipalitiesImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/municipality_image_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chinese_municipalities"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <TextView
+        android:id="@+id/promptTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/municipality_prompt"
+        android:textColor="@color/color_text_dark"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/municipalitiesImageView" />
+
+    <EditText
+        android:id="@+id/municipalityEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/municipality_hint"
+        android:imeOptions="actionGo"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/color_text_dark"
+        android:textColorHint="@color/color_text_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/promptTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
