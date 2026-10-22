@@ -3,5 +3,12 @@
     <string name="main_title">Municipalities in China</string>
     <string name="municipality_prompt">I want to know about:</string>
     <string name="municipality_hint">Enter a municipality</string>
+    <string name="municipality_name_placeholder">Municipality</string>
+    <string name="municipality_info_placeholder">Municipality information will appear here.</string>
+    <string name="municipality_detail_image_description">Image of the selected municipality</string>
+    <string name="visit_site">Visit site</string>
     <string name="municipality_image_description">Map of China showing the municipalities</string>
+    <string name="error_empty_municipality">Please enter a municipality.</string>
+    <string name="error_invalid_municipality">Please enter Beijing, Shanghai, Tianjin, or Chongqing.</string>
+    <string name="error_invalid_municipality_data">Invalid municipality data.</string>
 </resources>
